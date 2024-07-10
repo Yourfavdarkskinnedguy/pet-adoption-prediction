@@ -3,7 +3,8 @@ from sklearn.preprocessing import LabelEncoder
 import numpy as np
 import pickle
 
-loaded_model= pickle.load(open('C:/Users/HP/Desktop/pet/trained_model.sav', 'rb'))
+#loaded_model= pickle.load(open('C:/Users/HP/Desktop/pet/trained_model.sav', 'rb'))
+loaded_model= pickle.load(open('trained_model.sav', 'rb'))
 
 def pet_prediction(input_data):
     # Initialize LabelEncoders for categorical features
